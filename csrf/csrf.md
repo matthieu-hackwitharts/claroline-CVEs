@@ -1,0 +1,9 @@
+# Admin account takeover (CSRF) via XSS because of arbitrary file upload (version : 13.5.7)
+
+Claroline Connect is affected by a CSRF vulnerability, because of missing CSRF tokens or other protection means. This CSRF can be triggered via the Claroline's API,
+by combining an XSS vulnerability with a fetch request to the API. An arbitrary user with admin rights can be created by triggering the XSS from an admin user.
+
+**Example of POC : **
+
+
+
