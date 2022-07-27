@@ -22,10 +22,22 @@ public function uploadImage(Request $request): JsonResponse
 
         return new JsonResponse($objects);
     }
-    ```
-    <br>
+```
+    
+    
+<br>
     
 It is possible to trick this function by add some magic bytes like ```GIF8;``` which corresponds to the GIF image file type. The mime type ```image/gif``` 
 should be also applied.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![burp poc](https://raw.githubusercontent.com/matthieu-hackwitharts/claroline-CVEs/main/rce/poc_rce_burp.PNG)
+
+<br>
+
+Then it is possible to get RCE by using the upload php shell :
+
+![rce poc](https://raw.githubusercontent.com/matthieu-hackwitharts/claroline-CVEs/main/rce/rce_new_poc.PNG)
+
+**Fix suggestions :** Enhance file upload checks by adding real mime type verification (file content, bytes, size, etc). 
+
+
