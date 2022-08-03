@@ -27,7 +27,7 @@ public function uploadImage(Request $request): JsonResponse
     
 <br>
     
-It is possible to trick this function by add some magic bytes like ```GIF8;``` which corresponds to the GIF image file type. The mime type ```image/gif``` 
+It is possible to trick this function by adding some magic bytes like ```GIF8;``` which corresponds to the GIF image file type. The mime type ```image/gif``` 
 should be also applied.
 
 ![burp poc](https://raw.githubusercontent.com/matthieu-hackwitharts/claroline-CVEs/main/rce/poc_rce_burp.PNG)
