@@ -1,4 +1,4 @@
-# 'Location' stored XSS (version : 13.5.7)
+# 'Location' stored XSS (CVE-2022-37162)
 
 Claroline Connect suffers from a stored xss vulnerability in 'Calendar' functionality. By adding a specific payload in the ```Location``` of an event, an attacker can
 trigger an xss.
