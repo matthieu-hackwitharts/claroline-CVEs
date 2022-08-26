@@ -5,7 +5,7 @@ by combining an XSS vulnerability (like svg maybe ?) with a fetch request to the
 
 **Example of POC :**
 
-![csrf_poc](https://raw.githubusercontent.com/matthieu-hackwitharts/claroline-CVEs/main/CVE-2022-37160/admintakeover.png)
+![csrf_poc](https://raw.githubusercontent.com/matthieu-hackwitharts/claroline-CVEs/main/csrf/admintakeover.png)
 
 **Fix suggest :** adding CSRF tokens or other protection way.
 
