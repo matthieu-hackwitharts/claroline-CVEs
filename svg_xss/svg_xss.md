@@ -1,4 +1,4 @@
-# Stored XSS via SVG file upload (version : 13.5.7)
+# Stored XSS via SVG file upload (CVE-2022-37161)
 
 Claroline Connect presents a stored xss vulnerability because of the possibility to upload an arbitrary svg file, which is one of the allowed image types. 
 Several upload forms can be used, I've personnally choosed the resource icon upload.
