@@ -1,4 +1,4 @@
-# Remote code execution via arbitrary file upload (version : 13.5.7)
+# Remote code execution via arbitrary file upload (CVE-2022-37159)
 
 Claroline Connect app presents a RCE vulnerability because of the possibility to upload an arbitrary php file. This vulnerability is present on many upload forms, so I've
 personnally choosed the resource icon section.
